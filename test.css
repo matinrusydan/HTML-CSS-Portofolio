@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.timeline {
+    position: relative;
+    width: 700px;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.event {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.circle {
+    width: 27px;
+    height: 27px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    width: 250px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.text.left {
+    text-align: right;
+    margin-right: auto;
+    margin-left: calc(50% - 300px); /* Jarak dari tengah sama dengan yang kanan */
+}
+
+.text.right {
+    text-align: left;
+    margin-left: calc(50% + 35px); /* Sama seperti sebelumnya */
+}
